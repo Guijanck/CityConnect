@@ -1,17 +1,17 @@
 <div class="main">
-  <a routerLink="/main/home" class="home-container">
+  <a routerLink="/main/home" class="home-container" [class.active]="currentPage === pageEnum.HOME" (click)="navigateTo('home')">
     <ion-icon name="home"></ion-icon>
   </a>
-  <a routerLink="/main/events" class="events-container">
+  <a routerLink="/main/events" class="events-container" [class.active]="currentPage === pageEnum.EVENTS" (click)="navigateTo('events')">
     <ion-icon name="globe"></ion-icon>
   </a>
-  <a routerLink="/main/add-report" class="add-report-container">
+  <a routerLink="/main/add-report" class="add-report-container" [class.active]="currentPage === pageEnum.ADD_REPORT" (click)="navigateTo('add-report')">
     <ion-icon name="add"></ion-icon>
   </a>
-  <a routerLink="/main/ranking" class="ranking-container">
+  <a routerLink="/main/ranking" class="ranking-container" [class.active]="currentPage === pageEnum.RANKING" (click)="navigateTo('ranking')">
     <ion-icon name="trophy"></ion-icon>
   </a>
-  <a routerLink="/main/profile" class="profile-container">
+  <a routerLink="/main/profile" class="profile-container" [class.active]="currentPage === pageEnum.PROFILE" (click)="navigateTo('profile')">
     <ion-icon name="person"></ion-icon>
   </a>
 </div>
