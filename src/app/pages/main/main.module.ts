@@ -9,7 +9,14 @@ const routes: Routes = [
   {
     path: '',
     component: MainComponent,
-    children: [],
+    children: [
+      { path: 'home', loadChildren: () => import('./home/home.module').then((m) => m.HomeModule) },
+      { path: 'events', loadChildren: () => import('./events/events.module').then((m) => m.EventsModule) },
+      { path: 'add-report', loadChildren: () => import('./add-report/add-report.module').then((m) => m.AddReportModule) },
+      { path: 'ranking', loadChildren: () => import('./ranking/ranking.module').then((m) => m.RankingModule) },
+      { path: 'profile', loadChildren: () => import('./profile/profile.module').then((m) => m.ProfileModule) },
+      // { path: '**', redirectTo: 'home' },
+    ],
   },
 ];
 
@@ -19,9 +26,6 @@ const routes: Routes = [
     NavbarModule,
     FooterModule,
     RouterModule.forChild(routes)
-  ],
-  exports: [
-    MainComponent
   ],
   declarations: [
     MainComponent

@@ -20,7 +20,9 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-      preloadingStrategy: PreloadAllModules
+      preloadingStrategy: PreloadAllModules,
+      paramsInheritanceStrategy: 'always',
+      relativeLinkResolution: 'legacy',
     })
   ],
   exports: [RouterModule]

@@ -4,9 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-main',
   template: `
   <app-navbar></app-navbar>
-  <p>
-    main NEW works!
-  </p>
+    <router-outlet></router-outlet>
   <app-footer></app-footer>
   `
 })
