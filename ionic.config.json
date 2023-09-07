@@ -1,0 +1,7 @@
+{
+  "name": "CityConnect",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
