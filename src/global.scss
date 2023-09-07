@@ -59,6 +59,11 @@ a {
     text-decoration: none;
 }
 
+.ion-page{
+    overflow-y: scroll !important;
+    overflow-x:  hidden !important;
+}
+
 :root {
     --background-color: #252930;
     --primary-color: #363945;
