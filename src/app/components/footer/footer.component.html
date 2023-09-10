@@ -5,7 +5,7 @@
   <a routerLink="/main/events" class="events-container" [class.active]="currentPage === pageEnum.EVENTS" (click)="navigateTo('events')">
     <ion-icon name="globe"></ion-icon>
   </a>
-  <a routerLink="/main/add-report" class="add-report-container" [class.active]="currentPage === pageEnum.ADD_REPORT" (click)="navigateTo('add-report')">
+  <a id="click-trigger" class="add-report-container" [class.active]="currentPage === pageEnum.ADD_REPORT">
     <ion-icon name="add"></ion-icon>
   </a>
   <a routerLink="/main/ranking" class="ranking-container" [class.active]="currentPage === pageEnum.RANKING" (click)="navigateTo('ranking')">
@@ -15,3 +15,14 @@
     <ion-icon name="person"></ion-icon>
   </a>
 </div>
+
+<ion-popover trigger="click-trigger" triggerAction="click"  side="top" alignment="center">
+  <ng-template>
+    <ion-content>
+      <ion-list>
+        <ion-item [button]="true" [detail]="false" (click)="navigateTo('add-report')">Criar Ocorrência</ion-item>
+        <ion-item [button]="true" [detail]="false">Criar Publicação</ion-item>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-popover>
