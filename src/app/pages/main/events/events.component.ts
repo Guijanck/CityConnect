@@ -46,7 +46,7 @@ export class EventsComponent implements OnInit {
 
   //#region LifeCycle Methods
 
-  public ngOnInit(): void {
+  public async ngOnInit(): Promise<void> {
     this.eventsList.forEach((item) => {
       let maxDate = new Date();
       maxDate.setDate(maxDate.getDate() + 30);
@@ -62,17 +62,8 @@ export class EventsComponent implements OnInit {
 
     this.upcomingEvents = this.upcomingEvents.sort((b, a) => new Date(b.date).getTime() - new Date(a.date).getTime());
     this.othersEvents = this.othersEvents.sort((b, a) => new Date(b.date).getTime() - new Date(a.date).getTime());
-    console.log(this.upcomingEvents)
-    console.log(this.othersEvents)
   }
 
   //#endregion
 
-  //#region Public Methods
-
-  public setUpComingEvents(): void {
-
-  }
-
-  //#endregion
 }
