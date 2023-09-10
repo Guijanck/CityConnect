@@ -7,19 +7,32 @@ import { environment } from 'src/environments/environment';
   templateUrl: './add-report.component.html',
   styleUrls: ['./add-report.component.scss'],
 })
-export class AddReportComponent{
+export class AddReportComponent {
 
-  @ViewChild('map')mapRef!: ElementRef;
-  map!: GoogleMap;
+  //#region Constructor
 
   constructor() { }
+
+  //#endregion
+
+  //#region Lifecycle Methods
 
   public ngAfterViewInit(): void {
     this.createMap();
   }
 
+  //#endregion
 
-  public async createMap(): Promise<void>{
+  //#region Public Properties
+
+  @ViewChild('map') mapRef!: ElementRef;
+  map!: GoogleMap;
+
+  //#endregion
+
+  //#region Public Methods
+
+  public async createMap(): Promise<void> {
     this.map = await GoogleMap.create({
       id: 'my-map',
       apiKey: environment.mapsKey,
@@ -36,5 +49,7 @@ export class AddReportComponent{
     })
 
   }
+
+  //#endregion
 
 }
