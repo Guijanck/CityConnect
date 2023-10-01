@@ -10,6 +10,7 @@ const routes: Routes = [
     path: '',
     component: MainComponent,
     children: [
+      { path: 'ranking-people', loadChildren: () => import('./ranking-people/ranking-people.module').then((m) => m.RankingPeopleModule) },
       { path: 'home', loadChildren: () => import('./home/home.module').then((m) => m.HomeModule) },
       { path: 'events', loadChildren: () => import('./events/events.module').then((m) => m.EventsModule) },
       { path: 'add-report', loadChildren: () => import('./add-report/add-report.module').then((m) => m.AddReportModule) },

@@ -22,7 +22,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes, {
       preloadingStrategy: PreloadAllModules,
       paramsInheritanceStrategy: 'always',
-      relativeLinkResolution: 'legacy',
+      // relativeLinkResolution: 'legacy',
     })
   ],
   exports: [RouterModule]
