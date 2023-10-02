@@ -21,7 +21,8 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, {
       preloadingStrategy: PreloadAllModules,
-      paramsInheritanceStrategy: 'always'
+      paramsInheritanceStrategy: 'always',
+      // relativeLinkResolution: 'legacy',
     })
   ],
   exports: [RouterModule]

@@ -1,0 +1,226 @@
+.main {
+  height: 75vh;
+  padding: 0 4.8vw;
+
+  .container {
+
+    .body-status {
+      border: solid;
+      height: 28vh;
+      margin-top: 4rem;
+
+      border-radius: 13px;
+      border-width: 1px;
+
+      .body-title {
+        display: flex;
+        margin-left: 1rem;
+        margin-top: 1rem;
+
+        img {
+          width: 6rem;
+          height: 6rem;
+          border-radius: 50%;
+          margin-right: 2rem;
+        }
+
+        .title-name {
+          display: flex; 
+          flex-direction: column; 
+          justify-content: center; 
+          margin-right: 4rem;
+        }
+      }
+
+      .trophy {
+        display: flex;
+        justify-content: end;
+        margin-top: -5rem;
+        margin-right: 2rem;
+
+        ion-icon {
+          font-size: 3rem;
+          color: #B0BFE7;
+        }
+      }
+
+      .data {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        margin-right: 4rem; 
+        margin-left: 1rem;
+      }
+
+      .line-1 {
+        display: flex; 
+        margin-top: 5rem; 
+        justify-content: space-between;
+      }
+
+      .line-2 {
+        display: flex; 
+        margin-top: 3rem; 
+        justify-content: space-between;
+      }
+
+      .round {
+        display: flex;
+        margin-left: 1rem;
+        margin-top: 1rem;
+
+        ion-icon {
+          font-size: 3rem;
+          color: #FAA91C;
+        }
+      }
+
+      .total-points {
+        display: flex;
+        margin-left: 1rem;
+        margin-top: 1rem;
+
+
+        ion-icon {
+          font-size: 3rem;
+          color: #04FFA2;
+        }
+      }
+
+      .occurrences {
+        display: flex;
+        margin-left: 1rem;
+        margin-top: 1rem;
+
+        ion-icon {
+          font-size: 3rem;
+          color: #2196F3;
+        }
+      }
+
+      .teste {
+        display: flex;
+        margin-left: 1rem;
+        margin-top: 1rem;
+
+        ion-icon {
+          font-size: 3rem;
+          color: #EE5B50;
+        }
+      }
+
+      .img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+      }
+
+    }
+
+    .title-conquest {
+      margin-top: 7rem; 
+      margin-bottom: -2rem;
+
+      span {
+        font-size: 18px;
+      }
+    }
+
+    .body-conquest {
+      border: solid;
+      height: 29vh;
+      margin-top: 4rem;
+
+      border-radius: 13px;
+      border-width: 1px;
+
+      .conquests {
+
+        .information {
+          display: flex; 
+          flex-direction: column; 
+          justify-content: center; 
+          margin-left: 1rem;
+
+          .title {
+            font-size: 17px;
+          }
+
+          .sub-title {
+            font-size: 12px; 
+            color: #748e97; 
+            width: 100%;
+          }
+        }
+
+        .enthusiastic {
+          display: flex;
+          margin-top: 3rem;
+          margin-left: 3rem;
+
+          ion-icon {
+            font-size: 3rem;
+            color: #2196F3;
+          }
+        }
+
+        .explorer {
+          display: flex;
+          margin-top: 3rem;
+          margin-left: 3rem;
+
+          ion-icon {
+            font-size: 3rem;
+            color: #FAA91C;
+          }
+        }
+
+        .leader {
+          display: flex;
+          margin-top: 3rem;
+          margin-left: 3rem;
+
+          ion-icon {
+            font-size: 3rem;
+            color: #04FFA2;
+          }
+        }
+
+        .open {
+          margin-top: 3rem; 
+          border-top: solid 1px; 
+          display: flex;
+          justify-content: space-between;
+
+          button {
+            background-color: transparent;
+            color: white;
+
+            margin-top: 1.5rem;
+            margin-left: 1.5rem;
+
+          }
+        }
+
+        .icon {
+          display: flex;
+          justify-content: end;
+
+          ion-icon {
+            margin-right: 1rem;
+            margin-top: -2rem;
+
+            font-size: 2.5rem;
+            color: #04FFA2;
+          }
+        }
+      }
+
+      .img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+      }
+    }
+  }
+}
