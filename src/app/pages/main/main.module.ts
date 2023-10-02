@@ -13,6 +13,7 @@ const routes: Routes = [
       { path: 'home', loadChildren: () => import('./home/home.module').then((m) => m.HomeModule) },
       { path: 'events', loadChildren: () => import('./events/events.module').then((m) => m.EventsModule) },
       { path: 'add-report', loadChildren: () => import('./add-report/add-report.module').then((m) => m.AddReportModule) },
+      { path: 'create-post', loadChildren: () => import('./create-post/create-post.module').then((m) => m.CreatePostModule) },
       { path: 'ranking', loadChildren: () => import('./ranking/ranking.module').then((m) => m.RankingModule) },
       { path: 'profile', loadChildren: () => import('./profile/profile.module').then((m) => m.ProfileModule) },
       // { path: '**', redirectTo: 'home' },

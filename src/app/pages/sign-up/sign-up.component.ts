@@ -1,14 +1,34 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
 import { SignUpStepsEnum } from 'src/app/models/enums/sign-up-steps.enum';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.scss'],
 })
-export class SignUpComponent implements OnInit {
-  constructor() {}
+
+export class SignUpComponent {
+
+  //#region Constructor
+
+  constructor(
+    public readonly formBuilder: FormBuilder
+  ) {
+    this.formGroup = formBuilder.group({
+      name: ['', Validators.required],
+      birthday: ['', Validators.required],
+      cpf: ['', Validators.required],
+      email: ['', Validators.required],
+      phone: ['', Validators.required],
+      address: [{
+        longitude: '',
+        latitude: '',
+      }, Validators.required]
+    });
+  }
+
+  //#endregion
 
   //#region Public Properties
 
@@ -16,17 +36,18 @@ export class SignUpComponent implements OnInit {
 
   public currentStep: SignUpStepsEnum = SignUpStepsEnum.PERSONAL_DATA;
 
-  public formGrup!: FormGroup;
+  public formGroup!: FormGroup;
 
   //#endregion
-
-  ngOnInit() {}
 
   //#region Public Methods
 
   public setCurrentStep(): void {
     if(this.currentStep !== this.stepEnum.CONFIRM_DATA)
-      this.currentStep++
+      this.currentStep++;
+  }
+
+  public onSubmit(): void {
 
   }
 

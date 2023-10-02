@@ -33,10 +33,10 @@ export class MainComponent implements OnInit {
   //#region Lifecycle Methods
 
   public async ngOnInit(): Promise<void> {
-    if(this.currentPage == this.pageEnum.ADD_REPORT || this.currentPage == this.pageEnum.PROFILE)
+    if(this.currentPage == this.pageEnum.ADD_REPORT || this.currentPage == this.pageEnum.PROFILE || this.currentPage == this.pageEnum.ADD_POST)
       this.shouldShowNavbar = false;
 
-    if(this.currentPage == this.pageEnum.ADD_REPORT)
+    if(this.currentPage == this.pageEnum.ADD_REPORT || this.currentPage == this.pageEnum.ADD_POST)
       this.shouldShowFooter = false;
   }
 
@@ -67,6 +67,9 @@ export class MainComponent implements OnInit {
         break;
       case 'add-report':
         this.currentPage = this.pageEnum.ADD_REPORT;
+        break;
+      case 'create-post':
+        this.currentPage = this.pageEnum.ADD_POST;
         break;
       case 'ranking':
         this.currentPage = this.pageEnum.RANKING;
