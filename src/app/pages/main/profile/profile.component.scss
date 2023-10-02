@@ -1,0 +1,97 @@
+
+.profile{
+    /* Meu Perfil */
+    font-weight: 300;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.01em;
+    border-bottom: 1px solid var(--primary-color);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    
+    color: #FFFFFF;
+    h5{
+        margin: 3.4vh 0;
+    }
+}  
+.icon-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+.title{
+    position: absolute;
+    width: 163px;
+    height: 28px;
+    left: calc(50% - 163px/2 - 0.5px);
+    top: 280px;
+    
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.01em;
+    
+    color: #FFFFFF;
+
+}
+    
+sub-title{
+
+    display: flex;
+    width: 100px;
+    height: 100vh;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    color: #676D6D;
+
+    p{
+        vertical-align: middle;
+        line-height: 1.5;
+    }
+
+}
+.image-container img {
+    border: 2px solid var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    width: 40vw;
+    align-items: center;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 388px;
+    height:  31px;
+
+    .item{
+        margin: 4.8vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90vw;
+        height: 16px;
+        font-weight: 400px;
+        font-size: 14px;
+        
+        p{
+            width: 50vw;
+            border-bottom: 1px  solid var(--secondary-color);
+            padding-bottom: 0,45vh;
+         }
+    }
+}
+
+
+
