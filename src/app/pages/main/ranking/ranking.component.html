@@ -6,33 +6,57 @@
 
         <span class="title-day">Nos últimos 90 dias</span>
       </div>
-      <div class="header-menu">
+      <!-- <div class="header-menu">
         <h2>Fazer o menu</h2>
 
-      </div>
+      </div> -->
     </div>
 
-    <div class="container-body">
-      <div class="body-ranking" *ngFor="let ranking of rankingList">
-        <a style="color: white;" routerLink="/ranking-people">
-        <!-- style="display: flex; margin-left: 3rem; margin-top: 3rem;" -->
-          <div class="body-image">
-            <div style="display: flex; align-items: center; margin-right: 1rem;">
-              <span style="font-size: 14px;">{{ranking.id}}</span>
-            </div>
-            <img [src]="'../../../../assets/no-image.svg'" alt="Foto de perfil do autor da publicação">
-            <div style="display: flex; flex-direction: column; justify-content: center; margin-right: 4rem;">
-              <span style=" font-size: 16px;">{{ranking.name}}</span>
-              <span style="font-size: 14px; color: #93a0a5;">{{ranking.user}}</span>
-            </div>
-            
+    <div class="container-body" style="border: solid 1px #7a8087; border-radius: 20px;">
+      <!-- <div class="body-ranking" *ngFor="let ranking of rankingList">
+        <a style="color: white;" routerLink="/ranking-people"> </a>
+        !-- style="display: flex; margin-left: 3rem; margin-top: 3rem;"
+        <div class="body-image">
+          <div style="display: flex; align-items: center; margin-right: 1rem;">
+            <span style="font-size: 14px;">{{ranking.id}}</span>
           </div>
-          <div class="points" style="display: flex; justify-content: center; margin-top: -4rem; margin-right: 2rem; justify-content: end;">
-            <span>{{ranking.points}}</span>
+          <img [src]="'../../../../assets/no-image.svg'" alt="Foto de perfil do autor da publicação">
+          <div style="display: flex; flex-direction: column; justify-content: center; margin-right: 4rem;">
+            <span style=" font-size: 16px;">{{ranking.name}}</span>
+            <span style="font-size: 14px; color: #93a0a5;">{{ranking.user}}</span>
           </div>
 
-        </a>
-      </div>
+        </div>
+        <div class="points"
+          style="display: flex; justify-content: center; margin-top: -4rem; margin-right: 2rem; justify-content: end;">
+          <span>{{ranking.points}}</span>
+        </div>
+      </div> -->
+
+      <table style="width: 100%;" *ngFor="let ranking of rankingList">
+        <tr>
+          <td style="height: 10vh; border-bottom: solid 1px #7a8087;">
+            <div style="display: flex; margin-left: 1rem;">
+              <div style="display: flex; align-items: center; margin-right: 1rem;">
+                <span style="font-size: 14px;">{{ranking.id}}</span>
+              </div>
+
+              <img [src]="'../../../../assets/no-image.svg'" alt="Foto de perfil do autor da publicação"
+                style="width: 6rem; height: 6rem; border-radius: 50%; margin-right: 2rem;">
+              <div style="display: flex; flex-direction: column; justify-content: center; width: 16rem;">
+                <span style=" font-size: 16px;">{{ranking.name}}</span>
+                <span style="font-size: 14px; color: #93a0a5;">{{ranking.user}}</span>
+              </div>
+
+              <div class="points"
+                style="display: flex;">
+                <span style="display: flex; align-items: center; font-size: 15px;">{{ranking.points}}</span>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+      </table>
     </div>
   </div>
 </div>

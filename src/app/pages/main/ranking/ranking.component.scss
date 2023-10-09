@@ -1,5 +1,5 @@
 .main {
-  height: 75vh;
+  height: 71vh;
   //height: 64vh;
   padding: 0 4.8vw;
 
@@ -11,6 +11,7 @@
   .container {
 
     .container-header {
+      margin-bottom: 5vh;
 
       .header-title {
         display: flex;
@@ -30,13 +31,13 @@
       .header-menu {}
     }
 
-    .container-body {
-      border: solid;
-      height: 91vh;
-      margin-top: 4rem;
+    #container-body {
+      // border: solid;
+      // height: 91vh;
+      // margin-top: 4rem;
 
-      border-radius: 13px;
-      border-width: 1px;
+      // border-radius: 13px;
+      // border-width: 1px;
     }
 
     .body-ranking {
