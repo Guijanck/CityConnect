@@ -10,7 +10,7 @@ const routes: Routes = [{ path: '', component: RankingComponent }];
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    // RankingPeopleModule
+    RankingPeopleModule
   ],
   exports: [
     RankingComponent,
