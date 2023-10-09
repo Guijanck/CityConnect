@@ -12,26 +12,24 @@
       </div> -->
     </div>
 
-    <div class="container-body" style="border: solid 1px #7a8087; border-radius: 20px;">
-      <table style="width: 100%;" *ngFor="let ranking of rankingList">
+    <div class="container-body">
+      <table *ngFor="let ranking of rankingList">
         <tr>
           <!-- <a style="color: white;" routerLink="/ranking-people"> </a> -->
-          <td style="height: 10vh; border-bottom: solid 1px #7a8087;">
-            <div style="display: flex; margin-left: 1rem;">
-              <div style="display: flex; align-items: center; margin-right: 1rem;">
-                <span style="font-size: 14px;">{{ranking.id}}</span>
+          <td>
+            <div class="body-ranking">
+              <div class="ranking-number">
+                <span>{{ranking.id}}</span>
               </div>
 
-              <img [src]="'../../../../assets/no-image.svg'" alt="Foto de perfil do autor da publicação"
-                style="width: 6rem; height: 6rem; border-radius: 50%; margin-right: 2rem;">
-              <div style="display: flex; flex-direction: column; justify-content: center; width: 16rem;">
-                <span style=" font-size: 16px;">{{ranking.name}}</span>
-                <span style="font-size: 14px; color: #93a0a5;">{{ranking.user}}</span>
+              <img class="image-profile" [src]="'../../../../assets/no-image.svg'" alt="Foto de perfil do autor da publicação">
+              <div class="identification">
+                <span class="name">{{ranking.name}}</span>
+                <span class="nickname">{{ranking.user}}</span>
               </div>
 
-              <div class="points"
-                style="display: flex;">
-                <span style="display: flex; align-items: center; font-size: 15px;">{{ranking.points}}</span>
+              <div class="points">
+                <span class="span-points">{{ranking.points}}</span>
               </div>
             </div>
           </td>
@@ -40,7 +38,3 @@
     </div>
   </div>
 </div>
-
-<script>
-  document.ge
-</script>
