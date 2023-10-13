@@ -3,40 +3,28 @@
     <div class="container-header">
       <div class="header-title">
         <span>Ranking de Contribuidores</span>
-
         <span class="title-day">Nos últimos 90 dias</span>
-      </div>
-      <div class="header-menu">
-        <h2>Fazer o menu</h2>
-
       </div>
     </div>
 
     <div class="container-body">
-      <div class="body-ranking" *ngFor="let ranking of rankingList">
-        <a style="color: white;" routerLink="/ranking-people">
-        <!-- style="display: flex; margin-left: 3rem; margin-top: 3rem;" -->
+      <div class="body-ranking" *ngFor="let ranking of rankingList; let i = index" [attr.data-index]="i">
+        <a routerLink="/ranking-people" class="body-item">
           <div class="body-image">
-            <div style="display: flex; align-items: center; margin-right: 1rem;">
-              <span style="font-size: 14px;">{{ranking.id}}</span>
+            <div class="body-index">
+              <span >{{i + 1}}</span>
             </div>
-            <img [src]="'../../../../assets/no-image.svg'" alt="Foto de perfil do autor da publicação">
-            <div style="display: flex; flex-direction: column; justify-content: center; margin-right: 4rem;">
-              <span style=" font-size: 16px;">{{ranking.name}}</span>
-              <span style="font-size: 14px; color: #93a0a5;">{{ranking.user}}</span>
+            <img [src]="'../../../../assets/no-image.svg'" alt="Foto de perfil do usuário">
+            <div class="body-username">
+              <h4>{{ranking.name}}</h4>
+              <p>{{ranking.user}}</p>
             </div>
-            
           </div>
-          <div class="points" style="display: flex; justify-content: center; margin-top: -4rem; margin-right: 2rem; justify-content: end;">
-            <span>{{ranking.points}}</span>
+          <div class="points">
+            <p>{{ranking.points > 999 ? '+999' : ranking.points}} Pontos</p>
           </div>
-
         </a>
       </div>
     </div>
   </div>
 </div>
-
-<script>
-  document.ge
-</script>

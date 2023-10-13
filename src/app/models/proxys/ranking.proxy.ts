@@ -3,5 +3,5 @@ export interface RankingProxy {
     name: string;
     user: string;
     image: string;
-    points: string;
+    points: number;
 }

@@ -1,72 +1,125 @@
 .main {
   height: 75vh;
-  //height: 64vh;
-  padding: 0 4.8vw;
-
 
   display: flex;
   flex-direction: column;
   gap: 2.4vh;
 
+  padding: 0 4.8vw;
+  margin: 5vh 0 50vh 0;
+
   .container {
 
-    .container-header {
+    &-header {
 
       .header-title {
         display: flex;
         justify-content: space-between;
 
         span {
-          font-size: 15px;
+          font-size: 4.4vw;
+          font-weight: 500;
         }
 
         .title-day {
-          font-size: 13px;
-          color: #748e97;
+          font-size: 3.2vw;
+          color: var(--grey-80);
         }
 
       }
 
-      .header-menu {}
     }
 
-    .container-body {
-      border: solid;
-      height: 91vh;
-      margin-top: 4rem;
+    &-body {
+      border: 1px solid var(--grey-70);
+      border-radius: 1.8vh;
 
-      border-radius: 13px;
-      border-width: 1px;
+      margin-top: 4.4vh;
     }
 
     .body-ranking {
-          border-bottom: solid;
-          border-width: 1px;
-          height: 8vh;
+      padding: 3.2vh 0px;
+      border: 1px solid var(--grey-70);
 
-      .body-image {
+      .body-item {
         display: flex;
-        margin-left: 1rem;
-        margin-top: 1rem;
-        // justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
 
-        img {
-          width: 6rem;
-          height: 6rem;
-          border-radius: 50%;
-          margin-right: 2rem;
+        padding: 0 3.2vw;
+
+        .body-image {
+          display: flex;
+          gap: 2.4vw;
+
+          img {
+            width: 14.4vw;
+            border-radius: 50%;
+          }
+        }
+
+        .body-index {
+          display: flex;
+          align-items: center;
+
+          color: var(--grey-80);
+
+          margin-right: 3.2vw;
+          font-size: 4.2vw;
+        }
+
+        .body-username {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          margin-left: 1.4vw;
+
+          h4 {
+            font-size: 4.4vw;
+            font-weight: 500;
+            color: var(--grey-60);
+            margin: 0;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            width: 30vw;
+            white-space: nowrap;
+
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+
+          p {
+            color: var(--grey-70);
+            margin: 0.8vh 0;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            width: 25vw;
+            white-space: nowrap;
+
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
         }
       }
 
-      .points {
-        // display: flex;
-        // justify-content: end;
-        // margin-right: 1rem;
+      .points p {
+        font-size: 4.4vw;
 
-        span {
-          font-size: 15px;
-        }
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        width: 25vw;
+        white-space: nowrap;
+
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
       }
+
     }
   }
 }
