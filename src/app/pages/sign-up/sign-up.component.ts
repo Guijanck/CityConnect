@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SignUpStepsEnum } from 'src/app/models/enums/sign-up-steps.enum';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BuscaCepService } from 'src/app/services/busca-cep/busca-cep.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -15,7 +16,8 @@ export class SignUpComponent {
 
   constructor(
     public readonly formBuilder: FormBuilder,
-    public readonly buscaCepService: BuscaCepService
+    public readonly buscaCepService: BuscaCepService,
+    private readonly router: Router,
   ) {
     this.formGroup = formBuilder.group({
       name: ['', Validators.required],
@@ -128,6 +130,10 @@ export class SignUpComponent {
 
     this.formGroup.controls['street'].setValue(success.logradouro);
     this.formGroup.controls['city'].setValue(success.localidade + ', ' + success.uf);
+  }
+
+  public async goBack(): Promise<void> {
+    await this.router.navigate(['/login/']);
   }
 
   //#endregion

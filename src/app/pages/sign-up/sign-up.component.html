@@ -1,5 +1,5 @@
 <div class="main">
-  <div class="back-button-container" *ngIf="currentStep > stepEnum.PERSONAL_DATA" (click)="currentStep = currentStep - 1; checkIfPageIsValid()">
+  <div class="back-button-container" (click)="currentStep == stepEnum.PERSONAL_DATA ? goBack() : currentStep = currentStep - 1; checkIfPageIsValid()">
     <ion-icon name="chevron-back-outline"></ion-icon>
   </div>
   <div class="header">
