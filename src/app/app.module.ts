@@ -7,6 +7,8 @@ import { IonicStepperModule } from 'ionic-stepper';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NgxMaskModule } from 'ngx-mask';
+import { HttpAsyncModule } from './modules/http-async/http-async.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
+    NgxMaskModule.forRoot(),
+    HttpAsyncModule,
     AppRoutingModule
   ],
   providers: [{
