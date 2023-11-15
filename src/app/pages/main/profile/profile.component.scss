@@ -1,133 +1,107 @@
+main{
+    height: 90vh;
 
-.profile{
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 21vw;
+        border-bottom: 1px solid var(--primary-color);
+        width: 100vw;
 
-    font-weight: 200;
-    font-size: 10px;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.01em;
-    border-bottom: 1px solid var(--primary-color);
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    
-    color: #FFFFFF;
-    h5{
-        margin: 3.4vh 0;
+        h5 {
+            margin: 3.4vh 0;
+        }
     }
-}  
-.icon-container{
 
-    position: relative;
-    width: 100vw;
-    left: 25px;
-    right: 90.65%;
-    top: -23px;
-    bottom: 21.28%;
-    font-size: 35px;
-    color: #04FFA2;
+    .content-container {
 
-}
-.title{
-    position: absolute;
-    width: 163px;
-    height: 28px;
-    left: 130px;
-    top: 285px;
-    
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.01em;
-    
-    color: #FFFFFF;
+        .image-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-}
-    
-        .sub-title{
+            margin-top: 4.8vh;
 
-            position: relative;
-            width: 100px;
-            height: 16px;
-            left: 165px;
-            top: 75px;
-            color: #8e8f91;
+            img {
+                border: 2px solid var(--secondary-color);
+                border-radius: 50%;
+                width: 25vw;
+            }
+        }
+
+        .username-container {
+            margin: 2.4vh 0;
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+
+            width: 100vw;
+
+            .title {
+                font-weight: 500;
+                font-size: 5.2vw;
+            }
+
+            .sub-title {
+                color: var(--grey-70);
+                font-size: 2.8vw;
+            }
         }
 
 
-    .image-container img {
-        border: 2px solid var(--secondary-color);
-        border-radius: 50%;
-        display: flex;
-        width: 35vw;
-        align-items: center;
-        position: relative;
-        left: 130px;
-        top: 45px;
-    }
 
 
-.list{
-    display: flex;
-    flex-direction: column;
-    width: 388px;
-    height:  31px;
-    position: relative;
-    top: 110px;
-
-    .item{
-        margin: 4.8vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90vw;
-        height: 16px;
-        font-weight: 400px;
-        font-size: 14px;
-        color: #8e8f91;
-        
 
 
-            p{
-                width: 50vw;
-                border-bottom: 1px  solid var(--secondary-color);
-                box-shadow: 10px 50px 0x rgba(4, 255, 162, 0.35);
-                padding-bottom: 0,45vh;
+        .informations-list {
+            display: flex;
+            flex-direction: column;
+
+            .info-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                margin: 4.8vw;
+                height: 2.4vh;
+
+                font-size: 3.2vw;
+                color: var(--grey-70);
+
+                p {
+                    color: var(--text-color);
+                    width: 50vw;
+                    border-bottom: 1px solid var(--secondary-color);
+                }
             }
+        }
 
-            .colorv2{
-                color: #FFFFFF;
+        .invite-friends {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin: 4.4vh 0;
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                background-color: var(--secondary-color);
+                border-radius: 1.2vw;
+                box-shadow: var(--box-shadow-secondary-color);
+
+                font-weight: 500;
+                color: var(--shadow-color);
+
+                padding: 3.2vw;
+                width: 90vw;
             }
+        }
     }
 }
-
-
-button{
-
-    width: 90vw;
-    height: 15px;
-
-    margin: 45vh 4.8vw 0 4.8vw;
-    font-weight: 500;
-    font-size: 10px;
-    text-align: center;
-    line-height: 50px;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.01em;
-    border-radius: 1px;
-    padding: 20px 133px;
-
-    background-color: var(--secondary-color);
-    box-shadow: 0px 0px 17px rgba(4, 255, 162, 0.35);
-    border-radius: 15px;
-
-}
-
-
-
