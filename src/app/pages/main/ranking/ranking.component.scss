@@ -25,7 +25,6 @@
           font-size: 3.2vw;
           color: var(--grey-80);
         }
-
       }
 
     }
@@ -43,7 +42,7 @@
       padding: 3.2vh 0px;
       border: 1px solid var(--grey-70);
 
-      &:first-child{
+      &:first-child {
         border-radius: 2.8vw 2.8vw 0 0;
       }
 
@@ -115,21 +114,21 @@
             -webkit-box-orient: vertical;
           }
         }
+
+        .points p {
+          font-size: 4.4vw;
+
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          width: 25vw;
+          white-space: nowrap;
+
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+
       }
-
-      .points p {
-        font-size: 4.4vw;
-
-        overflow: hidden;
-        text-overflow: ellipsis;
-
-        width: 25vw;
-        white-space: nowrap;
-
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
-      }
-
     }
   }
 }
