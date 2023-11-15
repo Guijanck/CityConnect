@@ -45,6 +45,9 @@ export class FooterComponent {
       case 'add-report':
         this.currentPage = this.pageEnum.ADD_REPORT;
         break;
+      case 'create-post':
+        this.currentPage = this.pageEnum.ADD_POST;
+        break;
       case 'ranking':
         this.currentPage = this.pageEnum.RANKING;
         break;

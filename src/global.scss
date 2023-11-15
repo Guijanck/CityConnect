@@ -57,6 +57,7 @@ html {
 
 a {
     text-decoration: none;
+    color: var(--text-color);
 }
 
 .ion-page{
@@ -77,6 +78,8 @@ a {
 
     --grey-60: #B9BFC0;
     --grey-70: #676D6D;
+    --grey-80: #515351;
 
     --box-shadow-secondary-color: 0 0 30px #04FFA245;
+    --box-shadow-button-disabled: 0 0 30px #B9BFC045;
 }
